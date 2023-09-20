@@ -1,8 +1,8 @@
 import Head from "next/head";
 import styles from "@/styles/Home.module.css";
-import Header from "@/components/Header";
+import Header2 from "@/components/Header2";
 
-export default function Home() {
+export default function Mint() {
   const backgroundStyle = {
     backgroundSize: "cover",
     backgroundPosition: "center center",
@@ -21,10 +21,34 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div>
-        <div style={backgroundStyle} className="brightness-50 ">
-          {/*  <div className="bg-blue-300"> */}
+        <div style={backgroundStyle} className="brightness-50 "></div>
+        <Header2 />
+        <div className="absolute z-40 w-full h-full top-0">
+          <h1 className="pt-20 font-VT323 text-white text-7xl text-center">
+            Welcome to the <br />
+            world of Foxies !
+          </h1>
+
+          <div className="pt-40 grid grid-cols-1 md:grid-cols-3 lg:grid-flow-row gap-6 font-VT323 text-white text-4xl mx-16 leading-10">
+            <div className="p-4">
+              Chickens generate $EGGS tokens while being staked. They might
+              become handy later on in the game...
+            </div>
+            <div className=" p-4 text-center	">
+              In this wonderful game, you'll be able to play 2 characters :
+              <button class="relative mx-auto mt-8 border-4  border-black bg-white rounded-full text-4xl sm:text-6xl text-black px-12 flex items-center">
+                <span class="relative font-VT323">Mint</span>
+                <span class="absolute top-1/2 right-4 transform -translate-y-1/2 text-4xl font-bold font-mono">
+                  &gt;
+                </span>
+              </button>
+            </div>
+            <div className="p-4 text-right">
+              Foxes love $EGGS and they are eager to steal them from chickens...
+              You should try staking your fox.
+            </div>
+          </div>
         </div>
-        <Header />
       </div>
     </>
   );

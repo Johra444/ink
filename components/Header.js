@@ -53,8 +53,7 @@ export default function Header() {
   return (
     <header className="flex z-50 w-full h-20 absolute top-0 bg-transparent">
       <div className="flex w-full justify-between items-end mx-8 pt-8 relative">
-      <Link href="/mint"> <button className='border-2	border-white bg-white	rounded-full font-VT323 text-2xl text-black px-4 py-1' >Bring me to the coop !</button></Link>  
-    
+      <Link href="/coop"> <button className='border-2	border-white bg-white	rounded-full font-VT323 text-2xl text-black px-4 py-1' >Bring me to the coop !</button></Link>
         <ConnectWallet />
       </div>
     </header>
